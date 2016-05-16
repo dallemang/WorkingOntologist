@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xalan="http://xml.apache.org/xslt"
+         xmlns:p="http://www.hbo.com/HBOWorkflow/PackageMetadata"
+         xsi:noNamespaceSchemaLocation="AddContent.xsd">
+   <metadata>
+      <series>
+         <title>Game of Thrones</title>
+         <description>While a civil war brews between several noble families in Westeros, the children of the former rulers of the land attempt to rise up to power. Meanwhile a forgotten race, bent on destruction, return after thousands of years in the North.</description>
+         <primaryCategory>Adventure, Drama, Fantasy</primaryCategory>
+         <additionalCategories/>
+         <channel>HBO</channel>
+      </series>
+      <season>
+         <seasonNumber>1</seasonNumber>
+      </season>
+      <video>
+         <mediaType>TV</mediaType>
+         <title>Winter is Coming</title>
+         <episodeNumber>1</episodeNumber>
+         <rating>TV-14</rating>
+         <contentRatingReason>S,D</contentRatingReason>
+         <description>Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jon's place. Across the sea, Viserys Targaryen plans to wed his sister to a nomadic warlord in exchange for an army.</description>
+         <fullDescription>Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jon's place. Across the sea, Viserys Targaryen plans to wed his sister to a nomadic warlord in exchange for an army.</fullDescription>
+         <copyright>HBO Studios</copyright>
+         <keywords>king,deserter,execution,violence,sword,undead,wolf cub,arrow,castle,queen,incest,breasts,box full of snakes,decapitated head,ritual,dragon's egg,duel,knife,boy,suit of armor,carcass,hot bath,climbing down a wall</keywords>
+         <language>English</language>
+         <programmingType>Episode</programmingType>
+         <ReachEngine_ID>123456789</ReachEngine_ID>
+         <TMS_ID>EP0123456789</TMS_ID>
+         <originalPremiereDate>2011-04-21</originalPremiereDate>
+         <segments>00:09:50;04,00:16:30;06,00:20:49;17</segments>
+         <CastMembers>
+            <CastMember>
+               <Name>Sean Bean</Name>
+               <Role>Eddard 'Ned' Stark</Role>
+            </CastMember>
+            <CastMember>
+               <Name>Mark Addy</Name>
+               <Role>Robert Baratheon</Role>
+            </CastMember>
+            <CastMember>
+               <Name>Nikolaj Coster-Waldau</Name>
+               <Role>Jaime Lannister</Role>
+            </CastMember>
+            <CastMember>
+               <Name>Michelle Fairley</Name>
+               <Role>Catelyn Stark</Role>
+            </CastMember>
+            <CastMember>
+               <Name>Lena Headey</Name>
+               <Role>Cersei Lannister</Role>
+            </CastMember>
+            <CastMember>
+               <Name>Emilia Clarke</Name>
+               <Role>Daenerys Targaryen</Role>
+            </CastMember>
+            <CastMember>
+               <Name>Iain Glen</Name>
+               <Role>Jorah Mormont</Role>
+            </CastMember>
+         </CastMembers>
+      </video>
+   </metadata>
+   <files>
+      <file>
+         <fileType>Video</fileType>
+         <fileName>BSH_123_Winter_is_Coming_98765432_hbo.mp4</fileName>
+      </file>
+      <file>
+         <fileType>Closed Captioning</fileType>
+         <fileName>BSH_123_Winter_is_Coming_98765432_CC_hbo.XML</fileName>
+      </file>
+   </files>
+</content>
