@@ -1,0 +1,150 @@
+# baseURI: http://workingontologist.com/rule/map
+
+@prefix : <http://workingontologist.com/rule/map#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rl: <http://workingontologist.com/rule/map#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://workingontologist.com/rule/map>
+  rdf:type owl:Ontology ;
+  rdfs:label "A model of mapping behaviors for RDF to RDF model mapping"^^xsd:string ;
+.
+rl:Create
+  rdf:type owl:Class ;
+  rdfs:comment "Defines the type of the instance created" ;
+  rdfs:label "Create an instance of the type" ;
+  rdfs:subClassOf rl:MapBase ;
+.
+rl:Map
+  rdf:type owl:Class ;
+  rdfs:comment "No property value conversions are supported" ;
+  rdfs:label "Map a source datatype property to a target datatype property" ;
+  rdfs:subClassOf rl:MapBase ;
+.
+rl:MapAssociation
+  rdf:type owl:Class ;
+  rdfs:comment "Create an association between three instance" ;
+  rdfs:label "For example, a portrayal instance related to a character, an actor and a rendition"^^xsd:string ;
+  rdfs:subClassOf rl:MapBase ;
+.
+rl:MapBase
+  rdf:type owl:Class ;
+  rdfs:comment "Establishes the domain of map classes" ;
+  rdfs:label "The abstract class of mappers" ;
+  rdfs:subClassOf owl:Thing ;
+.
+rl:MapInstance
+  rdf:type owl:Class ;
+  rdfs:comment "For example, add a scope vocabulary term" ;
+  rdfs:label "Add a property to a vocabulary instance" ;
+  rdfs:subClassOf rl:MapBase ;
+.
+rl:MapUri
+  rdf:type owl:Class ;
+  rdfs:comment "Generally accepts a UUID, formatted in a string for URI" ;
+  rdfs:label "Create a URI based on parameters" ;
+  rdfs:subClassOf rl:MapBase ;
+.
+rl:expr
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "Any SPARQL \"expression\" that can exist on the LHS of a SPARQL \"BIND\" statement.  For example, \"concat('abc','123')\""^^xsd:string ;
+  rdfs:domain rl:Map ;
+  rdfs:label "A string reference containing an expression to be evaluated"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+rl:fld
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "This refers to the property on the new instance holding the new reference"^^xsd:string ;
+  rdfs:domain rl:MapAssociation ;
+  rdfs:label "The reference property of an association."^^xsd:string ;
+  rdfs:range owl:ObjectProperty ;
+.
+rl:format
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "As an example, this format 'z%s' prefixes a 'z' character before a UUID" ;
+  rdfs:domain rl:MapUri ;
+  rdfs:label "a format for the URI"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+rl:namespace
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Needs a fully-qualified name, e.g., http://example.com" ;
+  rdfs:domain rl:MapUri ;
+  rdfs:label "The namespace of the URI" ;
+  rdfs:range rdfs:Resource ;
+.
+rl:parameters
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The range consists of an anonymous type with the parameters rl:fld and rl:reln references."^^xsd:string ;
+  rdfs:domain rl:MapAssociation ;
+  rdfs:label "The set of parameters specifying the association"^^xsd:string ;
+.
+rl:path
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "For example, \"er:porPerCh30/er:isChInSer50/en:exId\" points from an instance of type Character to an instance of type Series with a property \"exid\"."^^xsd:string ;
+  rdfs:domain rl:Map ;
+  rdfs:label "A string reference containing a property or property path reference to an object"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+rl:ref
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Can be used to reference a vocabulary term."^^xsd:string ;
+  rdfs:domain rl:MapInstance ;
+  rdfs:label "A static reference to an instance in the target model."^^xsd:string ;
+  rdfs:range rdfs:Resource ;
+.
+rl:reln
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "For example, in a Character context, for a property pointing to a Series, that properties name, e.g., \"rl:reln er:isCharInSeries\""^^xsd:string ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          rl:MapInstance
+          rl:MapAssociation
+        ) ;
+    ] ;
+  rdfs:label "An object property reference in the target model"^^xsd:string ;
+  rdfs:range owl:ObjectProperty ;
+.
+rl:src
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "In a Map context, references a datatype property if tgt property is a datatype property; otherwise references an ObjectProperty; or it can be a variable (a variable uses the \"var:\" namespace, e.g., var:a is the variable a."^^xsd:string ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          rl:Map
+          rl:MapUri
+        ) ;
+    ] ;
+  rdfs:label "The source property reference" ;
+  rdfs:range rdf:Property ;
+.
+rl:tgt
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "In a Map context, references a datatype property if src property is a datatype property; otherwise references a destination ObjectProperty; or it can be a variable (a variable uses the \"var:\" namespace, e.g., var:a is the variable a."^^xsd:string ;
+  rdfs:domain rl:Map ;
+  rdfs:label "The target property reference" ;
+  rdfs:range owl:DatatypeProperty ;
+.
+rl:this
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "For example, an \"rl:this\" reference in the \"rl:reln\" property of a map parameter on a MapAssociation related to Character implies the current instance of Character."^^xsd:string ;
+  rdfs:label "In a MapAssociation context, a reference to the instance in the map context."^^xsd:string ;
+.
+rl:type
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "This is in the target model" ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          rl:Create
+          rl:MapAssociation
+        ) ;
+    ] ;
+  rdfs:label "Identifies the class to be instantiated" ;
+  rdfs:range rdfs:Resource ;
+.

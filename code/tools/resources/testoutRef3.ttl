@@ -1,0 +1,101 @@
+
+@prefix afn:     <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix cwr:     <http://data.widget.com/c-w-r#> .
+@prefix ea:      <http://example.com/attributeType#> .
+@prefix ec:      <http://example.com/class#> .
+@prefix ech:     <http://example.com/choiceType#> .
+@prefix en:      <http://example.com/noteType#> .
+@prefix er:      <http://example.com/relationship#> .
+@prefix fn:      <http://www.w3.org/2005/xpath-functions#> .
+@prefix ns1:     <http://example.com/attributeType#20-20-> .
+@prefix os:      <http://example.com/OntologyServer#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res:     <http://widget.data.com/resource#> .
+@prefix rl:      <http://workingontologist.com/rule/map#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos-xl:  <http://www.w3.org/2008/05/skos-xl#> .
+@prefix skosxl:  <http://www.w3.org/2008/05/skos-xl#> .
+@prefix some-core:  <http://www.example.com/2014/08/some-core#> .
+@prefix teamwork:  <http://topbraid.org/teamwork#> .
+@prefix var:     <http://workingontologist.com/rule/variable#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+[]    a       cwr:Portrayal ;
+      cwr:appearsInRendition
+              <http://example.com/term#00s1> ;
+      cwr:portrayedBy <http://example.com/term#00p1> ;
+      cwr:portrays <http://example.com/term#00c1> .
+
+[]    a       cwr:Portrayal ;
+      cwr:appearsInRendition
+              <http://example.com/term#00s2> ;
+      cwr:portrayedBy <http://example.com/term#00p1> ;
+      cwr:portrays <http://example.com/term#00c2> .
+
+<http://data.widget.com/resource#z00c1>
+      a       cwr:Character ;
+      cwr:appearsAsCharacterInRendition
+              <http://data.widget.com/resource#z00s1> ;
+      cwr:created "2015-11-12"^^xsd:date ;
+      cwr:externalId "152485" ;
+      cwr:modified "2015-11-12"^^xsd:date ;
+      cwr:termId "A8F6C54D4DB1451FB0D87C814AF5BCAD" ;
+      skos:definition "Recurring thought (27 September 2014)"@en ;
+      skos:notation "00c1" ;
+      skos:prefLabel "Anna (Once Upon a Dystopia)"@en .
+
+<http://data.widget.com/resource#z00c2>
+      a       cwr:Character ;
+      cwr:appearsAsCharacterInRendition
+              <http://data.widget.com/resource#z00s2> ;
+      skos:definition """Main character in the Free \"Dead of Winter.\" Portra water. Freeform Press Release (DEAD OF some My last cast caught fish Announcement.doc) (distributed 10 February 2016)"""@en ;
+      skos:notation "00c2" ;
+      skos:prefLabel "Amy (Dead of Winter)"@en .
+
+<http://data.widget.com/resource#z00e1>
+      a       cwr:Segment ;
+      cwr:hasScope cwr:TvEpisode ;
+      cwr:isSegmentOf <http://data.widget.com/resource#z00s1> ;
+      cwr:title "Episode"@en ;
+      skos:altLabel "Apprentice, The"@en ;
+      skos:definition "\"Once Upon a Dystopia\" episode, release DAR (accessed 4 June 2015)"@en , "\"Twice Upon a Dystopia\" episode, unrelease DAR (accessed for June 2001)"@en ;
+      skos:definition2 "\"Thrice Upon a Dystopia\" episode@en" ;
+      skos:definition3 "\"Thrice Upon a Dystopia\" episode\"4 eyes Upon a Dystopia\" episode,"@en ;
+      skos:notation "00e1" ;
+      skos:prefLabel "404"@en .
+
+<http://data.widget.com/resource#z00p1>
+      a       cwr:Talent ;
+      cwr:appearsAsCharacter
+              <http://data.widget.com/resource#z00c1> , <http://data.widget.com/resource#z00c2> ;
+      cwr:perCharSerExid "135438" ;
+      cwr:perCharSerGuid "00s1" , "00s2" ;
+      cwr:perCharSerHelpExId
+              "help135438" ;
+      skos:definition """Actor stuff \"Dead of Winter\" and Duda in the Sky series \"Once Upon a Dystopia.\" Freeform Press Release (DEAD OF WINTER My last cast caught fish Announcement.doc) (distributed 10 February 2016) ; https://twitter.com/elizabethdlail ; Format Check / Once Upon a Dystopia (27 September 2014)"""@en ;
+      skos:notation "00p1" ;
+      skos:prefLabel "Lail, Elizabeth"@en .
+
+<http://data.widget.com/resource#z00s1>
+      a       cwr:Rendition ;
+      cwr:created "2011-03-24"^^xsd:date ;
+      cwr:externalId "135438" ;
+      cwr:hasChar <http://data.widget.com/resource#z00c1> ;
+      cwr:hasScope cwr:TvSeries ;
+      cwr:modified "2011-11-11"^^xsd:date ;
+      cwr:termId "A53A032D22E340338B131BD76D1F155A" ;
+      cwr:title "Series"@en ;
+      skos:definition """Live-action dogma \"Found\" exec Malod. \"Once Upon a Dare\" is from somewhere. Communication from echo (24 March 2011)_x000D_SkyNet (http://www.skymedianet.com/web/dnr/dispDNR.aspx?id=051711_01) (17 May 2011)_x000D_SKY Fall Premiere Dates (27 June 2011)_x000D_SKYNet (http://www.skymedianet.com/web/dnr/dispDNR.aspx?id=062711_01) (27 June 2011)"""@en ;
+      skos:notation "00s1" ;
+      skos:prefLabel "Once Upon a Dystopia"@en .
+
+<http://data.widget.com/resource#z00s2>
+      a       cwr:Rendition ;
+      cwr:hasChar <http://data.widget.com/resource#z00c2> ;
+      cwr:hasScope cwr:TvSeries ;
+      cwr:title "Series"@en ;
+      skos:definition "Liver-action stuff form June 27, 2016. \"Dead of Winter\" is part (\"Found,\" \"Once Upon A Dystopia\") and Ian Gotcha (Novmember 2015)"@en ;
+      skos:notation "00s2" ;
+      skos:prefLabel "Dead of Winter"@en .

@@ -1,0 +1,87 @@
+@prefix res:      <http://widget.data.com/resource#> .
+@prefix rl:      <http://workingontologist.com/rule/map#> .
+@prefix fn:      <http://www.w3.org/2005/xpath-functions#> .
+@prefix afn:	 <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix ea: <http://example.com/attributeType#> .
+@prefix ech: <http://example.com/choiceType#> .
+@prefix ec: <http://example.com/class#> .
+@prefix en: <http://example.com/noteType#> .
+@prefix er: <http://example.com/relationship#> .
+@prefix ns1: <http://example.com/attributeType#20-20-> .
+@prefix os: <http://example.com/OntologyServer#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix some-core: <http://www.example.com/2014/08/some-core#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos-xl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cwr: <http://data.widget.com/c-w-r#> .
+
+
+ec:Series
+	rl:map 
+		[rl:type cwr:Rendition ; a rl:Create] ,
+	    [rl:src er:hasChar30 ; rl:tgt cwr:hasChar ; a rl:Map ] ,
+	    [rl:src ech:title ; rl:tgt cwr:title ; a rl:Map ] ,
+    	[rl:src en:desc ; rl:tgt  skos:definition ; a rl:Map  ] ,
+    	[rl:src en:createDt ; rl:tgt  cwr:created ; a rl:Map  ] ,
+    	[rl:src en:exId ; rl:tgt  cwr:externalId ; a rl:Map  ] ,
+    	[rl:src en:modDt ; rl:tgt  cwr:modified ; a rl:Map  ] ,
+    	[rl:src en:termId ; rl:tgt  cwr:termId ; a rl:Map  ] ,
+		[rl:src some-core:guid ; rl:tgt  skos:notation ; a rl:Map ] ,
+		[rl:src skos:prefLabel ; rl:tgt  skos:prefLabel ; a rl:Map ] ,
+		[rl:src some-core:guid ; rl:format "z%s" ; rl:namespace <http://data.widget.com/resource#> ; a rl:MapUri ] ,
+		[rl:ref cwr:TvSeries ; rl:reln cwr:hasScope  ; a rl:MapInstance ] 
+	.
+
+ec:Episode
+	rl:map 
+		[rl:type cwr:Segment ; a rl:Create ] ,
+	    [rl:src ech:title43 ; rl:tgt cwr:title ; a rl:Map  ] ,
+    	[rl:src en:desc43 ; rl:tgt  skos:definition ; a rl:Map  ] ,
+		[rl:src some-core:guid ; rl:tgt  skos:notation ; a rl:Map ] ,
+		[rl:src skos:prefLabel ; rl:tgt  skos:altLabel ; a rl:Map ] ,
+		[rl:src en:dome43 ; rl:tgt  skos:prefLabel ; a rl:Map ] ,
+		[rl:src some-core:guid ; rl:format "z%s" ; rl:namespace <http://data.widget.com/resource#> ; a rl:MapUri ] ,
+		[rl:ref cwr:TvEpisode ; rl:reln cwr:hasScope ; a rl:MapInstance ] ,
+		[rl:src er:isEpiSer ; rl:tgt cwr:isSegmentOf ; a rl:Map ] 
+	.
+	
+ec:Character
+	rl:map 
+		[rl:type cwr:Character ; a rl:Create ] ,
+    	[rl:src en:desc30 ; rl:tgt  skos:definition ; a rl:Map  ] ,
+		[rl:src some-core:guid ; rl:tgt  skos:notation ; a rl:Map ] ,
+		[rl:src skos:prefLabel ; rl:tgt  skos:prefLabel ; a rl:Map ] ,
+    	[rl:src en:creDt30 ; rl:tgt  cwr:created  ; a rl:Map ] ,
+    	[rl:src en:exId30 ; rl:tgt  cwr:externalId  ; a rl:Map ] ,
+    	[rl:src en:mdDt30 ; rl:tgt  cwr:modified  ; a rl:Map ] ,
+    	[rl:src en:tmId30 ; rl:tgt  cwr:termId  ; a rl:Map ] ,
+		[rl:src some-core:guid ; rl:format "z%s" ; rl:namespace <http://data.widget.com/resource#> ; a rl:MapUri ] ,
+		[rl:src er:isChInSer50 ; rl:tgt cwr:appearsAsCharacterInRendition ; a rl:Map ] ,
+# 		[rl:src er:isPortChPer29 ; rl:reln cwr:appearsAsCharacterInRendition ; a rl:MapRelation ] ,
+		[ a rl:MapAssociation ;
+		  rl:type cwr:Portrayal ; 
+		  rl:parameters 
+			[rl:fld cwr:portrayedBy ; rl:reln  er:isPortChPer29 ], 
+			[rl:fld cwr:portrays ; rl:reln rl:this ] ,
+			[rl:fld cwr:appearsInRendition ; rl:reln er:isChInSer50 ] ;
+		] 
+	.
+
+ec:Person
+	rl:map 
+		[rl:type cwr:Talent ; a rl:Create ] ,
+    	[rl:src en:dsc29 ; rl:tgt  skos:definition ; a rl:Map  ] ,
+		[rl:src some-core:guid ; rl:tgt  skos:notation ; a rl:Map ] ,
+		[rl:src skos:prefLabel ; rl:tgt  skos:prefLabel ; a rl:Map ] ,
+		[rl:src some-core:guid ; rl:format "z%s" ; rl:namespace <http://data.widget.com/resource#> ; a rl:MapUri ] ,
+		[rl:src er:porPerCh30 ; rl:tgt cwr:appearsAsCharacter ; a rl:Map ] 
+	.
+
+
+	
+	
+	

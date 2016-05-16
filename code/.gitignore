@@ -4,7 +4,6 @@ bin/
 tmp/
 *.log
 *.json
-*.ttl
 *.tmp
 *.bak
 *.swp

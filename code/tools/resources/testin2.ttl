@@ -1,0 +1,298 @@
+@prefix ea: <http://example.com/attributeType#> .
+@prefix ech: <http://example.com/choiceType#> .
+@prefix ec: <http://example.com/class#> .
+@prefix en: <http://example.com/noteType#> .
+@prefix er: <http://example.com/relationship#> .
+@prefix ns1: <http://example.com/attributeType#20-20-> .
+@prefix os: <http://example.com/OntologyServer#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix some-core: <http://www.example.com/2014/08/some-core#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos-xl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/term#00s1>
+  rdf:type ec:Series ;
+  ea:Live-action_50 "true"^^xsd:boolean ;
+  ech:title "Series"@en ;
+  en:desc """Live-action dogma \"Found\" exec Malod. \"Once Upon a Dare\" is from somewhere. Communication from echo (24 March 2011)_x000D_
+SkyNet (http://www.skymedianet.com/web/dnr/dispDNR.aspx?id=051711_01) (17 May 2011)_x000D_
+SKY Fall Premiere Dates (27 June 2011)_x000D_
+SKYNet (http://www.skymedianet.com/web/dnr/dispDNR.aspx?id=062711_01) (27 June 2011)"""@en ;
+  en:createDt "2011-03-24"^^xsd:date ;
+  en:exId "135438" ;
+  en:modDt "2011-11-11"^^xsd:date ;
+  en:termId "A53A032D22E340338B131BD76D1F155A" ;
+  er:hasChar30 <http://example.com/term#054d81ee-d423-51fb-c2bc-c9e8243763a1> ;
+  er:hasChar30 <http://example.com/term#07c14856-3bbc-4989-bd11-eaea2d938de0> ;
+  er:hasChar30 <http://example.com/term#07fe8e3c-35df-4f51-bd70-6f689a6ff88b> ;
+  er:hasChar30 <http://example.com/term#08a83bff-2651-4855-b07c-acf898bbdff5> ;
+  er:hasChar30 <http://example.com/term#094a29fe-c187-798c-0a69-d6449f8bd7b7> ;
+  er:hasChar30 <http://example.com/term#0a478242-a7a3-44f0-f8d7-39e139c12887> ;
+  er:hasChar30 <http://example.com/term#0a7145c7-5ca6-49cb-8ea2-83dd5ad52556> ;
+  er:hasChar30 <http://example.com/term#0d4e7d2b-29a3-45b7-4999-eefe7edd1382> ;
+  er:hasChar30 <http://example.com/term#0e41c5d3-33c8-f613-0928-99955ebbf6a6> ;
+  er:hasChar30 <http://example.com/term#1047476c-86a5-8b57-3cd9-d3efe780928d> ;
+  er:hasChar30 <http://example.com/term#14413a4a-cddb-0211-364f-3d9c0f8dd298> ;
+  er:hasChar30 <http://example.com/term#144b3c5c-1223-1ad3-b5d7-cf8bd7427891> ;
+  er:hasChar30 <http://example.com/term#15d083f7-54ee-4955-8f6c-01bc16cc08af> ;
+  er:hasChar30 <http://example.com/term#174706bb-6685-a47f-aa95-97b12476818f> ;
+  er:hasChar30 <http://example.com/term#194e9452-90bf-a0e6-f9e3-cdea175a8cab> ;
+  er:hasChar30 <http://example.com/term#1a4ad683-e64c-8063-f379-a3502a7cad8f> ;
+  er:hasChar30 <http://example.com/term#1e4d59d8-92db-a1e2-a892-35cc3975ae8b> ;
+  er:hasChar30 <http://example.com/term#1e4da535-0e0d-aa9e-ed76-739cae4ce997> ;
+  er:hasChar30 <http://example.com/term#00c1> ;
+  er:hasChar30 <http://example.com/term#207bc50f-9234-48ef-83a2-375796f967fb> ;
+  er:hasChar30 <http://example.com/term#244b438f-e0b2-71a0-4e9d-a84b8a40e688> ;
+  er:hasChar30 <http://example.com/term#26eb43da-0eff-421c-ab23-48ace70aa7c6> ;
+  er:hasChar30 <http://example.com/term#294f895a-1e05-9864-4c40-e92847638a9a> ;
+  er:hasChar30 <http://example.com/term#2c421271-02bb-8be6-0114-ef97270a0ab3> ;
+  er:hasChar30 <http://example.com/term#3247f697-a597-3092-4975-3ce6f6f1d4b7> ;
+  er:hasChar30 <http://example.com/term#33473f56-5ddf-9fcb-d542-7355fd9a92bb> ;
+  er:hasChar30 <http://example.com/term#35403c36-9805-89a0-5174-06b80d0a9096> ;
+  er:hasChar30 <http://example.com/term#364daf98-3e32-fb2f-a9b3-a7d12e0006ae> ;
+  er:hasChar30 <http://example.com/term#3a44c3b6-0364-8f36-48c7-eeb576012dbc> ;
+  er:hasChar30 <http://example.com/term#3c45fcec-8364-8bee-2fd4-a7b8942609b8> ;
+  er:hasChar30 <http://example.com/term#454b483c-b44e-eaaf-d105-1ff81a98d49f> ;
+  er:hasChar30 <http://example.com/term#46433714-bf99-def5-910b-dfc9799c038a> ;
+  er:hasChar30 <http://example.com/term#4753ca9b-448f-41f9-9219-8a9c8e55a657> ;
+  er:hasChar30 <http://example.com/term#478a7dd5-4286-409d-bc98-0a557d9ee9bb> ;
+  er:hasChar30 <http://example.com/term#484209b6-2d7a-d782-f1ae-64d7326d1d86> ;
+  er:hasChar30 <http://example.com/term#494a8341-1b7e-b81c-2ea7-f970861ea6af> ;
+  er:hasChar30 <http://example.com/term#5291f819-4c0c-4b53-a857-f9a94274df2f> ;
+  er:hasChar30 <http://example.com/term#534f2a72-7dfc-a9f6-c10c-e7c1d1ef9f86> ;
+  er:hasChar30 <http://example.com/term#564568be-7ca5-a9b8-3aac-a1c037f641a4> ;
+  er:hasChar30 <http://example.com/term#568f9ba1-2cea-4702-a296-7fc1aaf835d7> ;
+  er:hasChar30 <http://example.com/term#57d42170-275c-4bcd-8406-5892c219599f> ;
+  er:hasChar30 <http://example.com/term#5849bce1-cec1-f70c-23e6-50b9312c76bd> ;
+  er:hasChar30 <http://example.com/term#5d4d8870-5006-c56d-6b9f-fe904c8800ba> ;
+  er:hasChar30 <http://example.com/term#5f44b41a-6ab6-0094-f587-f94ac07e3eaf> ;
+  er:hasChar30 <http://example.com/term#6047b517-fa67-1a1e-2f90-536ad17731a0> ;
+  er:hasChar30 <http://example.com/term#61437e50-b97f-3d0a-7fdc-e697c6f2eea1> ;
+  er:hasChar30 <http://example.com/term#6143aeaa-2d33-67be-652f-6188693b8abc> ;
+  er:hasChar30 <http://example.com/term#614961b8-3ef6-c1fb-4657-99a3fecc86ad> ;
+  er:hasChar30 <http://example.com/term#6243814b-702b-769a-6a60-6a1ff7c09593> ;
+  er:hasChar30 <http://example.com/term#6449e71e-bbc6-451d-656a-4502a37eb690> ;
+  er:hasChar30 <http://example.com/term#64617dc5-f40b-477d-9bb8-f4893fe51ea8> ;
+  er:hasChar30 <http://example.com/term#6545559b-d950-e60f-bdf5-292604076cb6> ;
+  er:hasChar30 <http://example.com/term#65488cdf-d462-07c5-8897-fd9d88e3d0b7> ;
+  er:hasChar30 <http://example.com/term#6845b619-5c29-df01-9348-7b03f0fd7799> ;
+  er:hasChar30 <http://example.com/term#6e43c3a8-67ca-fe59-df3f-5b5140fa9d85> ;
+  er:hasChar30 <http://example.com/term#6f476db7-90f6-b5a6-c2d3-01a39aa1189d> ;
+  er:hasChar30 <http://example.com/term#71898c33-9874-4125-a54a-6c54aa18666c> ;
+  er:hasChar30 <http://example.com/term#72f46e3b-2ce8-4c4c-806b-5df79be9ee1b> ;
+  er:hasChar30 <http://example.com/term#7349a94e-d264-5054-3815-b407300e1ba0> ;
+  er:hasChar30 <http://example.com/term#734e7931-b03b-e08d-d56a-8694e3304b9f> ;
+  er:hasChar30 <http://example.com/term#7547a31f-a78d-89ae-1312-dadcf15036ab> ;
+  er:hasChar30 <http://example.com/term#7c63522b-12cf-4840-ab09-11b381d23c70> ;
+  er:hasChar30 <http://example.com/term#7cdbb73b-2133-42f5-a1cf-fba3deaa9968> ;
+  er:hasChar30 <http://example.com/term#7d4a8037-7c84-4372-db7e-da3aa28dc29c> ;
+  er:hasChar30 <http://example.com/term#7db0af83-e8cc-4a2d-b5b8-985c399689c5> ;
+  er:hasChar30 <http://example.com/term#804be5b3-2a0b-b295-91aa-d1d1cab129a6> ;
+  er:hasChar30 <http://example.com/term#81402e8a-a18f-e980-ef0c-9872a4c30eac> ;
+  er:hasChar30 <http://example.com/term#85f3c31a-c0ee-4032-ac50-4d3e6cb8553a> ;
+  er:hasChar30 <http://example.com/term#864d8197-b09d-b0b0-cda9-5febb9514689> ;
+  er:hasChar30 <http://example.com/term#884feb2e-94cf-cb66-b1e6-96e90c285f8d> ;
+  er:hasChar30 <http://example.com/term#8e4cb8a8-4aad-7c66-1065-7bac0d4acfaa> ;
+  er:hasChar30 <http://example.com/term#8f4923aa-aca9-92c5-84dc-52dfa33ba4a8> ;
+  er:hasChar30 <http://example.com/term#8f897d2b-fd72-4bd5-b7f9-825d2602c969> ;
+  er:hasChar30 <http://example.com/term#9240e038-a8d7-3ae9-59b1-6a7e730c04a1> ;
+  er:hasChar30 <http://example.com/term#94006b48-736f-413a-8d41-1186495dab62> ;
+  er:hasChar30 <http://example.com/term#9b48c422-a00f-d589-4147-04304e6acca8> ;
+  er:hasChar30 <http://example.com/term#9c463ad9-e58b-a6ce-fa5d-5d428c887a95> ;
+  er:hasChar30 <http://example.com/term#9f456e58-1460-fc7e-fade-6faffff8c696> ;
+  er:hasChar30 <http://example.com/term#a1451434-1d20-737b-c363-e5715f0834a3> ;
+  er:hasChar30 <http://example.com/term#a48a9768-8262-4ec6-a1ea-fd03252f1cde> ;
+  er:hasChar30 <http://example.com/term#aa419dc0-8722-444b-ca73-749a06bef4b5> ;
+  er:hasChar30 <http://example.com/term#aae36f08-0033-4e4c-8299-c287dfec9bce> ;
+  er:hasChar30 <http://example.com/term#ac7c7815-1050-48ba-8613-4db942277796> ;
+  er:hasChar30 <http://example.com/term#b3455b91-2b80-2b6a-61dd-0f7664955195> ;
+  er:hasChar30 <http://example.com/term#b44bb726-eec0-f71e-af43-4f0f9de9d2af> ;
+  er:hasChar30 <http://example.com/term#b638c353-3503-4925-860e-4402937fa029> ;
+  er:hasChar30 <http://example.com/term#b64b198c-0bcb-18bb-9883-253518bffdaa> ;
+  er:hasChar30 <http://example.com/term#b746ef93-b873-6470-9736-7ce8e64d4eb1> ;
+  er:hasChar30 <http://example.com/term#ba4bbe3d-413a-1bac-7bf0-8fbce5adbbb9> ;
+  er:hasChar30 <http://example.com/term#bf4db5ed-e7a2-6dc3-383e-c2db676c40b0> ;
+  er:hasChar30 <http://example.com/term#c2ad356e-0e45-45c2-b81e-6120c4086024> ;
+  er:hasChar30 <http://example.com/term#c44aa588-102e-094a-32cf-968785ebbead> ;
+  er:hasChar30 <http://example.com/term#c4c13f82-205e-44dc-96de-dc7a56ca1194> ;
+  er:hasChar30 <http://example.com/term#c8e4bb10-4192-4fd6-8423-c9e1d9423dbf> ;
+  er:hasChar30 <http://example.com/term#cd4f3b75-475e-7f36-69dc-1e3bc7c6598b> ;
+  er:hasChar30 <http://example.com/term#d0422135-b144-a3dd-7552-196403746fac> ;
+  er:hasChar30 <http://example.com/term#d1ef2baf-1ea5-4781-be41-6ef3d831e67b> ;
+  er:hasChar30 <http://example.com/term#d24765e9-e011-171d-1cdf-58b4a1ba2593> ;
+  er:hasChar30 <http://example.com/term#d24c06d9-a925-b602-56de-227b4c0c03af> ;
+  er:hasChar30 <http://example.com/term#d5444971-52dc-cfd6-5bc9-e8b9c8b2c195> ;
+  er:hasChar30 <http://example.com/term#d947f81d-dee0-6575-cd96-8a6b5c7c5daf> ;
+  er:hasChar30 <http://example.com/term#db4583f7-c844-2d4e-0493-a3c2289e8ea4> ;
+  er:hasChar30 <http://example.com/term#dd4b38e3-65f3-dc94-7fa7-e31292cc3e98> ;
+  er:hasChar30 <http://example.com/term#de4a37c7-8de9-ec03-bdf4-1c226f0797a8> ;
+  er:hasChar30 <http://example.com/term#df4af489-1cdf-2e29-45b9-2042d40531a2> ;
+  er:hasChar30 <http://example.com/term#e14f28e1-fecf-49ce-847d-a5e1528f2855> ;
+  er:hasChar30 <http://example.com/term#e24e8a97-4f33-2f14-f42b-3e71ce9b5685> ;
+  er:hasChar30 <http://example.com/term#e448f711-55dc-c37f-d912-0466b3ba02be> ;
+  er:hasChar30 <http://example.com/term#e54d2ddb-ab7f-ab0d-7446-250ee867cdb7> ;
+  er:hasChar30 <http://example.com/term#e645200d-3dc5-dff2-bcad-3bdef04f7b8b> ;
+  er:hasChar30 <http://example.com/term#eb42d6ff-fb02-c6e3-4a45-3dbb4ffa2f92> ;
+  er:hasChar30 <http://example.com/term#ebdd53a1-a459-4588-ae29-d16339f7fd73> ;
+  er:hasChar30 <http://example.com/term#ec40640f-3900-12d8-ae1b-d98cd367179d> ;
+  er:hasChar30 <http://example.com/term#ec4234b8-877e-86a4-dd8f-2ac29f7ebca2> ;
+  er:hasChar30 <http://example.com/term#ec4cbf7f-ea55-b02b-4012-daf6b4163fac> ;
+  er:hasChar30 <http://example.com/term#ec4db2cf-ae9c-21e3-bf50-0e4458dae49e> ;
+  er:hasChar30 <http://example.com/term#ecacb56d-1954-4486-bb9d-96c776184ea9> ;
+  er:hasChar30 <http://example.com/term#ed4e4f59-53ab-e0c2-37c9-209283d370ae> ;
+  er:hasChar30 <http://example.com/term#ee4641d3-9419-001f-c2e4-1276b7ba8682> ;
+  er:hasChar30 <http://example.com/term#f04ec089-63ea-157e-7abd-b292a325758a> ;
+  er:hasChar30 <http://example.com/term#f748210f-6652-f1a2-4a98-ed15d12820bd> ;
+  er:hasChar30 <http://example.com/term#f9469717-7c26-be73-c41f-eb1380482885> ;
+  er:hasChar30 <http://example.com/term#fbbf35b1-3777-4e5a-b129-da1878aca853> ;
+  er:hasChar30 <http://example.com/term#fd255df7-628c-4e17-abb6-395b1f8e5635> ;
+  er:hasChar30 <http://example.com/term#fd435406-4abf-e980-a587-584e657b82b6> ;
+  er:hasChar30 <http://example.com/term#ff009a2f-5243-4f37-8930-268dfb34da80> ;
+  er:hasChar30 <http://example.com/term#ff43863e-8e71-5f4e-e5eb-69a583e709ba> ;
+  er:hasChar30 <http://example.com/term#ff4b6cb9-310f-c4c5-28b3-351b7437bc83> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#00b15258-389f-4294-991b-2915c1b94598> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#069c5e48-70f3-4fed-af31-a8b6f2267809> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#0a356551-4ff4-4460-b2e4-df2dee19851e> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#0f455c31-f960-4351-86b1-0ade855753e9> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#1f146ddd-cea4-42ec-aaf0-c304013b4e7e> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#2495d05f-a3be-49da-bb80-5208004d6095> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#3f53677d-53ee-4cd5-8906-3e2f640e5520> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#43b106b8-d3fb-41b4-9185-b1be0f71f050> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#49f0b6ff-6bb7-4b1e-afcb-b1bcedf7a53a> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#4a270d8c-5049-4abe-ab85-a6e5efa2ea96> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#539da414-8b6b-4a7c-bc85-e2e3a2b36e82> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#55ee46ea-fb6c-42f8-af8c-c00d8ed10667> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#5c48d063-06e5-4ed8-88d1-cb5647b574ef> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#6069b5e7-2c61-4cbf-98d2-5b47968fc734> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#613665e5-86a4-4ed4-a3de-cd37fe5890eb> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#68d6c603-30f2-45ca-bc35-a08086ccc9fa> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#6c6b21d5-f343-44d6-adcf-cfc21b2114ed> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#739c6671-4103-47bf-a0a4-859c172c440b> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#766eec67-299b-4d91-8dab-ae7f6cde1f58> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#7d3f7a20-cf0d-43b6-aab4-0d444aa1b1c9> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#95b22f32-eed6-4b7c-818a-fac7b753527f> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#9eb8b1de-0973-4bf2-af6a-9c679b51ec5d> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#a0441b51-009f-46a4-914e-e0326c2b1a87> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#a14b8102-0dd6-4c6a-8181-52274438b13e> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#a40eb6ab-1bfc-4603-9e6f-712419dc686b> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#baa20d49-cb18-4bd9-9da7-6f517a119632> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#be732924-8f3b-4cd1-bf54-59745edebb54> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#c0c48730-8654-4e55-a64d-959e87fd365b> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#cd33be8c-5f56-48d2-b33e-56ec6212957e> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#d081a4ed-fba1-4353-8c02-271096b8e7a2> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#00e1> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#da8bbb2d-30b3-42dd-a1bc-7374965765df> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#dab89ff9-8ff3-485d-be7e-71f06636ff21> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#ddbc84d5-b3a7-4fd4-b7b1-a71c2007e2b8> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#e32b0e34-784e-450b-ba8c-46e088b654ca> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#e522ef6d-1658-410d-9b40-37ae0f7342b0> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#ee79e096-4291-4e8d-bd87-09d8ead4e849> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#f3fccd28-4264-4786-aed0-619cc66e030c> ;
+  er:Has-Episode_18_Series_50_Episode_43 <http://example.com/term#fc2633af-c4a7-4a1d-a3fb-3539c0482640> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#00157876-b028-48fd-a258-252d42dab569> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#1ccf722a-b411-4b16-a1ef-f1bdb28a645f> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#1d0ca1af-3843-4c44-98cb-8e31eca35096> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#3acaa33b-e751-409c-a208-ed127a993fed> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#3dbc5ddd-9d1f-479d-99de-8dff190a63fe> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#4a8a5246-4d70-49ef-9d4a-9a6686f198a5> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#6ade2fa7-27f1-40f1-9f00-26f20668036f> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#7c47dce4-b35a-459b-836c-4433b7b73272> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#8064f255-93cb-44ae-8193-227a813bc288> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#bbac6654-4393-4583-aa7b-56d069a7ece7> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#c3732ef0-79ed-46e2-ac79-39075aa7ec4b> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#c51a26b1-cb71-4d60-85ac-1bf4054fb21c> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#cf554edc-01ce-4f74-bbe3-d6b78a87f54d> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#dc170cc5-2409-4447-be6a-52e43f7e18ea> ;
+  er:Has-Location_11_Series_50_Keyword_25 <http://example.com/term#ffa91f59-e517-49cd-9be2-2607b0a344c6> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#17478e5d-9870-7019-57ec-2fb5d42c66be> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#2c49996d-612d-7d3a-ef75-7d6188db4aa3> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#3c45883a-d6df-2767-8d18-1d86dee7f08e> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#a84bf87b-d187-4d9a-587b-fe56b0deddb4> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#d34ceee5-3ac3-3eec-c85f-9464856eb784> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#e457db19-72ac-47a5-9455-3e6bdd7ef4d2> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#ee48f25a-2230-7327-0a69-3cfab633008c> ;
+  some-core:guid "00s1" ;
+  skos:broader <http://example.com/term#9604bfdd-7cac-45f5-9128-70e232846314> ;
+  skos:prefLabel "Once Upon a Dystopia"@en ;
+  skos:related <http://example.com/term#10c9c153-7bfc-4cc7-83fb-c656327f2350> ;
+  skos:related <http://example.com/term#75afe901-7d9f-46d0-a364-6b7565d7135d> ;
+.
+
+<http://example.com/term#00e1>
+  rdf:type ec:Episode ;
+  ea:Live-action_43 "false"^^xsd:boolean ;
+  ech:title43 "Episode"@en ;
+  en:desc43 "\"Once Upon a Dystopia\" episode, release DAR (accessed 4 June 2015)"@en ;
+  en:desc43 "\"Twice Upon a Dystopia\" episode, unrelease DAR (accessed for June 2001)"@en ;
+  en:dome43 "404"@en ;
+  en:Foreign-Episode-_43 "F070"@en ;
+  en:Season-Year_43 "2014/15"@en ;
+  er:isEpiSer <http://example.com/term#00s1> ;
+  some-core:guid "00e1" ;
+  skos:broader <http://example.com/term#73e2500b-70b2-43dd-9029-b68afdb0a665> ;
+  skos:prefLabel "Apprentice, The"@en ;
+.
+
+
+<http://example.com/term#00c1>
+  rdf:type ec:Character ;
+  ea:Live-action_30 "true"^^xsd:boolean ;
+  en:desc30 "Recurring thought (27 September 2014)"@en ;
+  en:creDt30 "2015-11-12"^^xsd:date ;
+  en:exId30 "152485" ;
+  en:mdDt30 "2015-11-12"^^xsd:date ;
+  en:tmId30 "A8F6C54D4DB1451FB0D87C814AF5BCAD" ;
+  er:isChInSer50 <http://example.com/term#00s1> ;
+  er:isPortChPer29 <http://example.com/term#00p1> ;
+  some-core:guid "00c1" ;
+  skos:broader <http://example.com/term#0410b27c-5807-d641-6611-4900b1cd2185> ;
+  skos:prefLabel "Anna (Once Upon a Dystopia)"@en ;
+.
+
+
+<http://example.com/term#00p1>
+  rdf:type ec:Person ;
+  en:dsc29 """Actor stuff \"Dead of Winter\" and Duda in the Sky series \"Once Upon a Dystopia.\" 
+Freeform Press Release (DEAD OF WINTER My last cast caught fish Announcement.doc) (distributed 10 February 2016) ; https://twitter.com/elizabethdlail ; Format Check / Once Upon a Dystopia (27 September 2014)"""@en ;
+  er:porPerCh30 <http://example.com/term#00c1> ;
+  er:porPerCh30 <http://example.com/term#00c2> ;
+  some-core:guid "00p1" ;
+  skos:broader <http://example.com/term#0410b27c-30ad-6f57-6611-4900b1cd3285> ;
+  skos:prefLabel "Lail, Elizabeth"@en ;
+  skosxl:altLabel <http://example.com/label#a34e130f-f959-83c8-1138-86f8afe6dcbf_English_119279> ;
+.
+
+<http://example.com/term#00s2>
+  rdf:type ec:Series ;
+  ea:Live-action_50 "true"^^xsd:boolean ;
+  ech:title "Series"@en ;
+  en:desc """Liver-action stuff form June 27, 2016. \"Dead of Winter\" is part (\"Found,\" \"Once Upon A Dystopia\") and Ian Gotcha (Novmember 2015)"""@en ;
+  er:hasChar30 <http://example.com/term#8382de3a-43dc-4392-87a6-680ed58364b6> ;
+  er:hasChar30 <http://example.com/term#8af7f892-2824-4258-ae81-ce1a3d26dc0d> ;
+  er:hasChar30 <http://example.com/term#935f4680-8666-4a5b-8c80-719d4921f839> ;
+  er:hasChar30 <http://example.com/term#00c2> ;
+  er:Has-Variant_7_Series_50_Andouillette-title_34 <http://example.com/term#0f987064-3a34-4652-a178-15b1fb2c5974> ;
+  some-core:guid "00s2" ;
+  skos:broader <http://example.com/term#9604bfdd-7cac-45f5-9128-70e232846314> ;
+  skos:prefLabel "Dead of Winter"@en ;
+.
+
+
+<http://example.com/term#00c2>
+  rdf:type ec:Character ;
+  ea:Live-action_30 "true"^^xsd:boolean ;
+  en:desc30 """Main character in the Free \"Dead of Winter.\" Portra water. 
+Freeform Press Release (DEAD OF some My last cast caught fish Announcement.doc) (distributed 10 February 2016)"""@en ;
+  er:isChInSer50 <http://example.com/term#00s2> ;
+  er:isPortChPer29 <http://example.com/term#00p1> ;
+  some-core:guid "00c2" ;
+  skos:broader <http://example.com/term#0410b27c-5807-d641-6611-4900b1cd2185> ;
+  skos:prefLabel "Amy (Dead of Winter)"@en ;
+.
+
+
