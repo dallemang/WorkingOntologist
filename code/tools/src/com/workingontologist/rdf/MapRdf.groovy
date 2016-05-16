@@ -1,4 +1,4 @@
-package com.workingontologist.rdf
+package com.workingontologist.rdf;
 import static org.junit.Assert.*;
 
 import com.workingontologist.util.*;

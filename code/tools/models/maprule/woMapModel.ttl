@@ -85,7 +85,7 @@ rl:parameters
 .
 rl:path
   rdf:type owl:DatatypeProperty ;
-  rdfs:comment "For example, \"er:porPerCh30/er:isChInSer50/en:exId\" points from an instance of type Character to an instance of type Series with a property \"exid\"."^^xsd:string ;
+  rdfs:comment "For example, \"er:porPerCh30/er:isChInSer50/en:exId\" points to an instance of type Character to an instance of type Series with a property \"exid\"."^^xsd:string ;
   rdfs:domain rl:Map ;
   rdfs:label "A string reference containing a property or property path reference to an object"^^xsd:string ;
   rdfs:range xsd:string ;
